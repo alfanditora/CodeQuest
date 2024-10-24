@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robot Grid Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">CodeQuest</div>
+        <nav class="nav">
+            <a href="../../../dashboard/">Home</a>
+            <a href="../../course/">Courses</a>
+            <a href="../../quest/">Quest</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="user-info">
+                <span class="lightning-icon">⚡1</span>
+                <span class="menu-icon">☰</span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <aside class="sidebar">
+            <h2>Quest 1:</h2>
+            <h2>Escape Maze</h2>
+            <div class="streak-card">
+                <h3>Day 1</h3>
+                <p>Start a Learning Habit</p>
+                <ul>
+                    <li><span>✔</span> Start your first course</li>
+                    <li><span>◻</span> Finish your first lesson</li>
+                    <li><span>◻</span> Continue your streak tomorrow</li>
+                </ul>
+            </div>
+        </aside>
+    <div class="container">
+        <section class="game-container">
+            <div class="grid" id="grid"></div>
+            
+            <div class="command-input">
+                <div class="commands">
+                    <select id="commandSelect">
+                        <option value="forward">Move Forward</option>
+                        <option value="left">Turn Left</option>
+                        <option value="right">Turn Right</option>
+                        <option value="repeat">Repeat</option>
+                    </select>
+                    <input type="number" id="repeatCount" placeholder="Repeat times" min="2" max="10" style="display: none;">
+                    <button onclick="addCommand()">Add Command</button>
+                    <button onclick="runCommands()">Run</button>
+                    <button onclick="resetGame()">Reset</button>
+                </div>
+                <div class="command-list" id="commandList"></div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

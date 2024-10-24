@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+  
+header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+  
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.nav {
+    display: flex;
+    align-items: center;
+}
+  
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+  
+.search-bar input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+  
+.user-info {
+    display: flex;
+    align-items: center;
+}
+  
+.lightning-icon, .menu-icon {
+    margin-left: 20px;
+    font-size: 24px;
+}
+  
+.main-content {
+    display: flex;
+    margin-left: 600px;
+    padding-top: 90px;
+    padding-right: 90px;
+}
+  
+.sidebar {
+    background-color: #fff;
+    width: 480px;
+    padding: 20px;
+    border-radius: 20px;
+    border-right: 1px solid #eaeaea;
+    position: fixed;
+    top: 90px; 
+    bottom: 90px;
+    left: 90px;
+    overflow-y: auto; 
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.streak-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+  
+.streak-card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+  
+.streak-card ul {
+    list-style: none;
+}
+  
+.streak-card ul li {
+    margin-bottom: 5px;
+}
+
+.container {
+    max-width: 4800px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+  
+
+.game-container {
+    flex: 1;
+    background-color: white;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    background-color: #333;
+    padding: 2px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 48px;
+    height: 48px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.robot {
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.robot::after {
+    content: '▲';
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.obstacle {
+    background-color: #ff4444;
+}
+
+.start {
+    background-color: #4CAF50;
+}
+
+.end {
+    background-color: #2196F3;
+}
+
+.commands {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.command-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.command-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 100px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">CodeQuest</div>
+        <nav class="nav">
+            <a href="../../../dashboard/">Home</a>
+            <a href="../../course/">Courses</a>
+            <a href="../../quest/">Quest</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="user-info">
+                <span class="lightning-icon">⚡1</span>
+                <span class="menu-icon">☰</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <aside class="sidebar">
+            <h2>Course 1:</h2>
+            <h2>Berpikir Komputasional</h2>
+            <div class="streak-card">
+                <h3>Day 1</h3>
+                <p>Start a Learning Habit</p>
+                <ul>
+                    <li><span>✔</span> Start your first course</li>
+                    <li><span>◻</span> Finish your first lesson</li>
+                    <li><span>◻</span> Continue your streak tomorrow</li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="container">
+            <section class="introduction">
+                <h2>Apa itu Berpikir Komputasional?</h2>
+                <p>Berpikir komputasional adalah metode untuk memecahkan masalah dengan cara yang dapat diuraikan dan diselesaikan oleh komputer. Ini mencakup teknik pemecahan masalah yang meniru cara kerja komputer dalam memproses data, menyusun algoritma, dan menghasilkan solusi yang efisien.</p>
+            </section>
+    
+            <section class="concepts">
+                <h2>Konsep Utama Berpikir Komputasional</h2>
+                <div class="concept">
+                    <h3>1. Dekomposisi</h3>
+                    <p>Dekomposisi adalah proses memecah masalah yang kompleks menjadi bagian-bagian yang lebih kecil dan lebih mudah dikelola. Dengan cara ini, setiap bagian masalah dapat dipecahkan secara independen sebelum digabungkan kembali untuk membentuk solusi lengkap.</p>
+                </div>
+    
+                <div class="concept">
+                    <h3>2. Pengenalan Pola</h3>
+                    <p>Pengenalan pola membantu kita mengidentifikasi kesamaan dan pola dari masalah-masalah yang telah didekomposisi. Pola ini dapat digunakan untuk menyusun solusi umum yang dapat diterapkan pada banyak masalah yang serupa.</p>
+                </div>
+    
+                <div class="concept">
+                    <h3>3. Abstraksi</h3>
+                    <p>Abstraksi adalah proses menyaring informasi yang tidak relevan dan hanya fokus pada detail yang penting. Abstraksi membantu menyederhanakan masalah dengan menghilangkan kerumitan yang tidak perlu.</p>
+                </div>
+    
+                <div class="concept">
+                    <h3>4. Algoritma</h3>
+                    <p>Algoritma adalah serangkaian instruksi yang jelas dan teratur untuk menyelesaikan suatu masalah. Algoritma biasanya disusun dalam urutan langkah-langkah yang logis dan efisien sehingga komputer dapat mengikuti dan menyelesaikan masalah.</p>
+                </div>
+            </section>
+    
+            <section class="conclusion">
+                <h2>Kesimpulan</h2>
+                <p>Berpikir komputasional memungkinkan kita untuk memecahkan masalah dengan cara yang lebih sistematis dan efisien. Dengan menguasai teknik-teknik seperti dekomposisi, pengenalan pola, abstraksi, dan algoritma, kita dapat mengembangkan solusi yang dapat dipahami oleh komputer, sehingga membuka peluang lebih besar dalam dunia teknologi dan pemrograman.</p>
+            </section>
+
+            <section class="puzzle">
+                <h2>Teka-Teki: Urutkan Langkah-Langkah</h2>
+                <p>Tantangan: Urutkan hewan-hewan berikut berdasarkan petunjuk yang diberikan!</p>
+                
+                    <p>1. Hewan A lebih kecil dari hewan B.</p>
+                    <p>2. Hewan C lebih besar dari hewan A, tetapi lebih kecil dari hewan B.</p>
+                    <p>3. Hewan D adalah yang paling kecil.</p>
+
+                <p>Silakan urutkan </p>
+                <ul id="draggable-list">
+                    <li draggable="true" data-order="D">Langkah D</li>
+                    <li draggable="true" data-order="A">Langkah A</li>
+                    <li draggable="true" data-order="C">Langkah C</li>
+                    <li draggable="true" data-order="B">Langkah B</li>
+                </ul>
+
+                <button id="submit-answer">Cek Jawaban</button>
+                <div id="answer-info"></div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

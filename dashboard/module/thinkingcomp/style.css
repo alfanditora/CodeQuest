@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.lightning-icon,
+.menu-icon {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.main-content {
+    display: flex;
+    margin-left: 600px;
+    padding-top: 90px;
+    padding-right: 90px;
+}
+
+.sidebar {
+    background-color: #fff;
+    width: 480px;
+    padding: 20px;
+    border-radius: 20px;
+    border-right: 1px solid #eaeaea;
+    position: fixed;
+    top: 90px;
+    bottom: 90px;
+    left: 90px;
+    overflow-y: auto;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.streak-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.streak-card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.streak-card ul {
+    list-style: none;
+}
+
+.streak-card ul li {
+    margin-bottom: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.concept {
+    margin-bottom: 30px;
+}
+
+.concept h3 {
+    font-size: 22px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.concept p {
+    margin-left: 20px;
+}
+
+.conclusion {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.conclusion h2 {
+    color: #4CAF50;
+}
+
+.puzzle ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.puzzle ul li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    cursor: grab;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ddd;
+}
+
+.puzzle ul li.dragging {
+    opacity: 0.5;
+    background-color: #ccc;
+}
+
+.puzzle button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.puzzle button:hover {
+    background-color: #45a049;
+}
+
+#answer-info {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
